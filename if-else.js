@@ -75,4 +75,46 @@
 //     console.log('Miz book')
 // } else{
 //     console.log('heart book ')
+// // }
+
+// const temp=1
+// if(temp < 0){
+//     console.log('lce 0')
+// } else if(  temp <=20){
+//     console.log('cool cool')
+// } else{
+//     console.log('hot')
 // }
+
+
+// const gameLavel =60;
+//  if(gameLavel < 10){
+//     console.log('novice')
+//  } else if(gameLavel <= 50){
+//     console.log('Expert')
+//  } else{
+//     console.log('Pro Gamer')
+//  }
+// A:90-100
+// B:80-89
+// C:70-79
+// D:60-69
+// F:0-59
+
+
+// const marks = 79;
+
+// if(marks >=90 && makrs <100){
+//     console.log('A')
+// } else if( marks >=80 && marks <=89){
+//     console.log('B')
+// } 
+// else if( marks >=70  && marks <= 79){
+//     console.log('C')
+// }
+// else if( marks >=60 && marks <= 69){
+//     console.log('D')
+// } else{
+//     console.log('F')
+// }
+
