@@ -118,3 +118,50 @@
 //     console.log('F')
 // }
 
+// const isRain =true;
+// if(isRain == true){
+//     console.log('ami bahire jabo nah')
+// } else{
+//     console.log('ami bahire jabo')
+// }
+
+// const isRain =true;
+// if(!isRain){
+//     console.log('ami bahire jabo nah')
+// } else{
+//     console.log('ami bahire jabo')
+// }
+ 
+
+
+// const isRain =true ?  console.log('ami bahire jabo nah') : console.log('ami bahire jabo')
+
+// const money= 50;
+// if(money >= 60){
+//     console.log('birani khabo')
+// } else if( money >=50){
+//     console.log('singrs khabo')
+// }
+
+// const marks = 40;
+// if(marks >=90){
+//     console.log('Excellent')
+// } else if(marks >= 75 && marks <=89){
+//    console.log('Good')
+// } else if(marks >= 50 && marks <=74){
+//     console.log('Average')
+// } else {
+//     console.log('Poor')
+// } 
+// const age = 10;
+// if(age >=60){
+//   console.log('Senior Citizen')
+// } else if( age >=18){
+//     console.log('Adult')
+// } else if(age >= 13){
+//     console.log('teenager')
+// } else{
+//     console.log('child')
+// }
+
+   
