@@ -53,3 +53,71 @@
 // ৬ ঘণ্টা বা তার বেশি → "মোটামুটি ঘুম"
 // ৪ ঘণ্টা বা তার বেশি → "কম ঘুম"
 // নাহলে → "খুব কম ঘুম"
+// const sleepHour = 5;
+// if(sleepHour >= 8){
+//     console.log('onek vlo gum')
+// } else if(sleepHour >= 6){
+//     console.log('motamati gum hoyce')
+// } else if(sleepHour >= 4){
+//     console.log('Kom hoyce gum ')
+// } else{
+//     console.log('khum kom gum tmi beshi kore gumao')
+// }
+
+// totalPrice অনুযায়ী ডিসকাউন্ট দেখাও:
+
+// ১০,০০০ বা বেশি → "২০% ডিসকাউন্ট"
+// ৫,০০০ বা বেশি → "১০% ডিসকাউন্ট"
+// ১,০০০ বা বেশি → "৫% ডিসকাউন্ট"
+// নাহলে → "কোনো ডিসকাউন্ট নেই"
+
+// const price = 1000;
+// if(price >=1000){
+//     const discount =price *20 /100;
+//     const payAmount =price -discount
+//     console.log(payAmount)
+// } else if( price > 5000){
+//     const discount = price *10  /100;
+//     const payAmount =price -discount;
+//     console.log(payAmount)
+// } else if( price > 1000){
+//     const discount = price * 5 /100;
+//     const payAmount = price - discount
+//     console.log(payAmount)
+// }
+//  else{
+//   console.log('No Ser')
+// }
+
+// প্রশ্ন ৬ (একটু ভাবতে হবে): পরীক্ষা + উপস্থিতি
+
+// একজন ছাত্রের marks এবং attendance আছে।
+
+// যদি marks >= 80 এবং attendance >= 75 হয় → "Scholarship"
+// যদি marks >= 50 এবং attendance >= 60 হয় → "Pass"
+// নাহলে → "Fail"
+
+// const marks = 85;
+// const attendance=80
+// if(marks >= 80 && attendance >= 75){
+//     console.log('Scholarship')
+// } else if( marks >= 50 && attendance >= 60){
+//     console.log('pass')
+// } else{
+//     console.log('fail')
+// }
+
+// const age =2;
+// const cgpa =3.7;
+// if( age >=21 && cgpa >=3.5){
+//     console.log('Eligible')
+// } else {
+//     console.log('NOt Eligible')
+// }
+const age = 20;
+const money = 500;
+if(age >= 18 && money >= 300){
+    console.log('Movie dekhte jabe')
+} else{
+    console.log('jaite parbe nah tmi bacca')
+}
