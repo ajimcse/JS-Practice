@@ -22,12 +22,14 @@
 // console.log(even)
 
 
-var numbers = ['Tom', 'Tim', 'Tin', 'Tik'] 
+// var numbers = ['Tom', 'Tim', 'Tin', 'Tik'] 
  
-let result= '';
+// let result= '';
 
-for(const name of numbers){
-   console.log(name);
-   result += name
-}
-console.log(result)
+// for(const name of numbers){
+//    console.log(name);
+//    result += name
+// }
+// console.log(result)
+
+

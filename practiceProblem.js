@@ -114,10 +114,53 @@
 // } else {
 //     console.log('NOt Eligible')
 // }
-const age = 20;
-const money = 500;
-if(age >= 18 && money >= 300){
-    console.log('Movie dekhte jabe')
-} else{
-    console.log('jaite parbe nah tmi bacca')
-}
+// const age = 20;
+// const money = 500;
+// if(age >= 18 && money >= 300){
+//     console.log('Movie dekhte jabe')
+// } else{
+//     console.log('jaite parbe nah tmi bacca')
+// }
+
+
+// const javascript=['I', 'Love', 'JS'];
+
+// let jslove='';
+
+// for(const js of javascript ){
+    
+//     jslove += js
+// }
+// console.log(jslove)
+
+// const letters =['a', 'b', 'c', 'd'];
+
+// let word= '';
+// for(const letter of letters){
+//     // console.log(letter)
+//     word += letter
+// }
+// console.log(word)
+
+// const numbers =[10,20,30,40];
+
+// let sum =0;
+
+// for(const num of numbers){
+//      sum = sum + num
+// }
+// console.log(sum)
+
+const names=['Tom', 'Tim', 'Tin'];
+
+console.log(names.join('-'));
+ 
+
+const frouts =['Apple', 'Banana', 'Orange']
+
+let count =0;
+for(const foots of frouts){
+    
+    count ++
+ }
+ console.log(count)
