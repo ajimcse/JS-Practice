@@ -111,5 +111,17 @@ function sumOfNumber(numbers) {
     }
     return sum
 }
+// const result = sumOfNumber([12, 434, 535, 5656, 323, 1]);
+// console.log(result)
+
+function sumOfNumber(numbers) {
+    let even = [];
+    for (const num of numbers) {
+          if(num % 2===0){
+            even.push(num)
+          }
+    }
+   return even
+}
 const result = sumOfNumber([12, 434, 535, 5656, 323, 1]);
 console.log(result)
