@@ -135,10 +135,26 @@
 //      }
 // }
 // console.log(count)
-for (let i = 0; i <= 40; i++){
-     if( i % 2===1){
-          continue
-     }
-     console.log(i) 
-}
+// for (let i = 0; i <= 40; i++){
+//      if( i % 2===1){
+//           continue
+//      }
+//      console.log(i) 
+// }
 // Write a loop to print even numbers from 1 to 40. Use continue to skip odd numbers.
+
+
+// const friends =['ajim', 'sorkar', 'kalam', 'abul'];
+// // console.log(friends)
+// for(const friend of friends){
+//      // console.log(friend)
+// }
+// for(let i =0; i<friends.length; i++){
+//      // console.log(i);
+//      // console.log(friends[i])
+// }
+// let i=0;
+// while(i< friends.length){
+//      console.log(friends[i])
+//      i++;
+//

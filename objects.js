@@ -197,5 +197,11 @@
 // let kaj =propstion.includes('a');
 // console.log(kaj)
 
+
+const student=[
+  { name: "John", marks: 85 },
+  { name: "Alice", marks: 90 }
+]
+console.log(student)
  
  
