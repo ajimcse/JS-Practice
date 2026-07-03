@@ -117,11 +117,72 @@ function sumOfNumber(numbers) {
 function sumOfNumber(numbers) {
     let even = [];
     for (const num of numbers) {
-          if(num % 2===0){
+        if (num % 2 === 0) {
             even.push(num)
-          }
+        }
     }
-   return even
+    return even
 }
-const result = sumOfNumber([12, 434, 535, 5656, 323, 1]);
+// const result = sumOfNumber([12, 434, 535, 5656, 323, 1]);
+// console.log(result)
+
+function multiply(num1, num2, num3, num4) {
+    const result = num1 * num2 * num3 * num4;
+    return result;
+}
+// const result =multiply(12,34,54,43);
+// console.log(result)
+
+function isEvenAndOdd(number) {
+    if (number % 2 == 0) {
+        const result = number * 2;
+        return result
+    } else {
+        return number / 2
+    }
+}
+// const result =isEvenAndOdd(22);
+// console.log(result)
+
+function makrAvg(numbers) {
+    let sum = 0
+    for (const number of numbers) {
+        sum += number;
+
+    }
+    return sum / numbers.length
+}
+// const result = makrAvg([11, 32, 43, 54, 64, 42, 22]);
+// console.log(result.toFixed(2))
+
+// Write a function called count_zero() which will take a binary string (Binary string is a string which is consist of only 0 and 1) as parameter and count how many 0’s are there in that string.
+
+function countZero(str) {
+    let count = 0
+
+    for (const num of str) {
+        if (num == '0') {
+            count++;
+        }
+
+    }
+    return count;
+
+}
+// const result = countZero('10101010010101');
+// console.log(result)
+
+
+// Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. If even return Even. If odd return Odd
+
+function oddEven(number) {
+    if (number % 2 === 1) {
+        return 'odd';
+    }
+    else {
+
+        return 'Even'
+    }
+}
+const result = oddEven(41);
 console.log(result)
