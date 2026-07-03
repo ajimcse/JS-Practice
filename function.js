@@ -184,5 +184,60 @@ function oddEven(number) {
         return 'Even'
     }
 }
-const result = oddEven(41);
-console.log(result)
+// const result = oddEven(41);
+// console.log(result)
+
+
+function inchToFeet(inch) {
+    const feet = inch / 12;
+    const feeNumber = parseInt(feet);
+    // console.log(feeNumber)
+    // const inchRemaining =inch % 12;
+    // console.log(inchRemaining)
+    const result = feeNumber + ' ft ' + feeNumber + ' inch';
+    return result;
+}
+
+// const result = inchToFeet();
+// console.log(result)
+
+
+function isLeapYear(year) {
+    if (year % 100 !== 0 && year % 4 === 0) {
+        return true;
+    } 
+    if(year % 100 ===0 && year % 400 ===0){
+        return true;
+    }
+    else{
+        return false
+    }
+}
+// const result = isLeapYear(2034);
+// const result = isLeapYear1(2035);
+// const result = isLeapYear2(2036);
+// const result = isLeapYear3(2037);
+// const result = isLeapYear(2038);
+// console.log(result)
+
+function oddNumber(numbers){
+    let odd =[]
+    for(const number of numbers){
+       if(number % 2===1){
+          odd.push(number)
+       }
+         
+    }
+    let sum =0
+    for(const number of odd){
+        sum = sum + number;
+    }
+    const count =odd.length
+   const result = sum / count;
+   return result
+ } 
+const numbers=[21,54,43,54,56,344,71,43,75,88,91];
+const avg =oddNumber(numbers);
+console.log(avg.toFixed(2))
+
+
