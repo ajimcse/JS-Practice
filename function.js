@@ -205,11 +205,11 @@ function inchToFeet(inch) {
 function isLeapYear(year) {
     if (year % 100 !== 0 && year % 4 === 0) {
         return true;
-    } 
-    if(year % 100 ===0 && year % 400 ===0){
+    }
+    if (year % 100 === 0 && year % 400 === 0) {
         return true;
     }
-    else{
+    else {
         return false
     }
 }
@@ -220,24 +220,60 @@ function isLeapYear(year) {
 // const result = isLeapYear(2038);
 // console.log(result)
 
-function oddNumber(numbers){
-    let odd =[]
-    for(const number of numbers){
-       if(number % 2===1){
-          odd.push(number)
-       }
-         
+function oddNumber(numbers) {
+    let odd = []
+    for (const number of numbers) {
+        if (number % 2 === 1) {
+            odd.push(number)
+        }
+
     }
-    let sum =0
-    for(const number of odd){
+    let sum = 0
+    for (const number of odd) {
         sum = sum + number;
     }
-    const count =odd.length
-   const result = sum / count;
-   return result
- } 
-const numbers=[21,54,43,54,56,344,71,43,75,88,91];
-const avg =oddNumber(numbers);
-console.log(avg.toFixed(2))
+    const count = odd.length
+    const result = sum / count;
+    return result
+}
+// const numbers=[21,54,43,54,56,344,71,43,75,88,91];
+// const avg =oddNumber(numbers);
+// console.log(avg.toFixed(2))
 
+
+function evenAvg(numbers) {
+    let evens = []
+    for (const number of numbers) {
+        if (number % 2 === 0) {
+            evens.push(number)
+        }
+    }
+    let sum = 0
+    for (const number of evens) {
+        sum = sum + number;
+    }
+    const count = evens.length
+    const avg = sum / count;
+    return avg;
+}
+
+// const numbers=[21,54,43,54,56,344,71,43,75,88,91,2];
+// const avg =evenAvg(numbers);
+// console.log(avg.toFixed(2))
+
+
+
+
+function onDuplicate(array) {
+    const unique = []
+    for (const item of array) {
+        if (unique.includes(item) === false) {
+            unique.push(item)
+        }
+    }
+    return unique
+}
+const birynikhor = ['ajim', 'sokrar', 'kalam', 'ajim', 'azad', 'kalam']
+const uniqueArray = onDuplicate(birynikhor);
+console.log(uniqueArray);
 
