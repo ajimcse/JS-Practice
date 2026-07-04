@@ -274,6 +274,42 @@ function onDuplicate(array) {
     return unique
 }
 const birynikhor = ['ajim', 'sokrar', 'kalam', 'ajim', 'azad', 'kalam']
-const uniqueArray = onDuplicate(birynikhor);
-console.log(uniqueArray);
+// const uniqueArray = onDuplicate(birynikhor);
+// console.log(uniqueArray);
+
+
+const min = Math.min(12,42,44,76,3,8,75,43)
+// console.log(min)
+
+const max = Math.max(12,42,44,76,3,8,75,43)
+// console.log(max)
+
+// console.log(Math.round(2.25))
+// console.log(Math.round(2.85))
+// console.log(Math.floor(2.95))
+// console.log(Math.floor(2.25))
+// console.log(Math.ceil(2.15))
+// console.log(Math.ceil(2.15))
+
+// console.log(Math.random())
+// console.log(Math.random()*10)
+// const rand=Math.random(Math.random()*10)
+// console.log(rand)
+
+// console.log(Math.random())
+const students = ['Ajim', 'Kalam', 'Azad'];
+
+const index = Math.floor(Math.random() * students.length);
+
+// console.log(students[index]);
+
+// const now = new Date();
+// console.log(now.getMonth())
+const date = new Date(2026, 6, 4);
+// console.log(date.toLocaleDateString('en-GB'));
+
+const now = new Date();
+console.log(now.toLocaleDateString('en-BD'));
+console.log(now.toLocaleTimeString('en-BD'));
+
 
