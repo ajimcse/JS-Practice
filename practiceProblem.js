@@ -153,7 +153,7 @@
 
 const names=['Tom', 'Tim', 'Tin'];
 
-console.log(names.join('-'));
+// console.log(names.join('-'));
  
 
 const frouts =['Apple', 'Banana', 'Orange']
@@ -163,4 +163,30 @@ for(const foots of frouts){
     
     count ++
  }
- console.log(count)
+//  console.log(count)
+
+function singleNumber(numbers){
+        let count =0
+      for(const number of numbers){
+         if(number === 5){
+            count ++
+         }
+      }
+      return count;
+
+}
+// const numbers = [5,6,11,12,98, 5]
+// const result =singleNumber(numbers);
+// console.log(result)
+function stringCount(string){
+    let count =0;
+    for(const str of string){
+       count += str.length
+          
+      }
+      return count
+      
+}
+const string ='pabna'
+const result =stringCount(string)
+console.log(result)
