@@ -255,18 +255,39 @@ function getMaxOfArrayNumber(numbers) {
 // const result = getMaxOfArrayNumber(numbers);
 // console.log(result)
 
-function shopping(shirt,pant, shoe){
-   const shirtPrice= 500;
-   const pantPrice =300;
-   const shoePrice=900;
+function shopping(shirt, pant, shoe) {
+   const shirtPrice = 500;
+   const pantPrice = 300;
+   const shoePrice = 900;
 
-   const totalShirtPrice= shirtPrice *shirt;
-   const totalPantPrice= pantPrice * pant;
-   const totalShoePrice=shoePrice *shoe;
+   const totalShirtPrice = shirtPrice * shirt;
+   const totalPantPrice = pantPrice * pant;
+   const totalShoePrice = shoePrice * shoe;
 
-   const totalCostPrice= totalShirtPrice + totalPantPrice + totalShoePrice;
+   const totalCostPrice = totalShirtPrice + totalPantPrice + totalShoePrice;
    return totalCostPrice;
 }
 
 // const result =shopping(8,1,1);
 // console.log(result)
+const phones = [
+   { name: 'Galaxy S24', brand: 'Samsung', price: 99999, color: 'Black', camera: '50MP', size: '6.2 inch' },
+   { name: 'iPhone 16', brand: 'Apple', price: 149999, color: 'White', camera: '48MP', size: '6.1 inch' },
+   { name: 'Pixel 9', brand: 'Google', price: 89999, color: 'Blue', camera: '50MP', size: '6.3 inch' },
+   { name: 'Xiaomi 14', brand: 'Xiaomi', price: 74999, color: 'Green', camera: '50MP', size: '6.36 inch' },
+   { name: 'OnePlus 13', brand: 'OnePlus', price: 84999, color: 'Gray', camera: '50MP', size: '6.82 inch' }
+];
+
+
+function getCheapestPhone(phones) {
+   let min = phones[0];
+   for (const phone of phones) {
+
+      if (phone.price < min.price) {
+         min =phone
+      }
+   }
+   return min
+}
+const result = getCheapestPhone(phones);
+console.log(result)
