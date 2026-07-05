@@ -128,7 +128,7 @@
 // let jslove='';
 
 // for(const js of javascript ){
-    
+
 //     jslove += js
 // }
 // console.log(jslove)
@@ -151,42 +151,91 @@
 // }
 // console.log(sum)
 
-const names=['Tom', 'Tim', 'Tin'];
+const names = ['Tom', 'Tim', 'Tin'];
 
 // console.log(names.join('-'));
- 
 
-const frouts =['Apple', 'Banana', 'Orange']
 
-let count =0;
-for(const foots of frouts){
-    
-    count ++
- }
+const frouts = ['Apple', 'Banana', 'Orange']
+
+let count = 0;
+for (const foots of frouts) {
+
+   count++
+}
 //  console.log(count)
 
-function singleNumber(numbers){
-        let count =0
-      for(const number of numbers){
-         if(number === 5){
-            count ++
-         }
+function singleNumber(numbers) {
+   let count = 0
+   for (const number of numbers) {
+      if (number === 5) {
+         count++
       }
-      return count;
+   }
+   return count;
 
 }
 // const numbers = [5,6,11,12,98, 5]
 // const result =singleNumber(numbers);
 // console.log(result)
-function stringCount(string){
-    let count =0;
-    for(const str of string){
-       count += str.length
-          
-      }
-      return count
-      
+function stringCount(string) {
+   let count = 0;
+   for (const str of string) {
+      count += str.length
+
+   }
+   return count
+
 }
-const string ='pabna'
-const result =stringCount(string)
+// const string ='pabna'
+// const result =stringCount(string)
+// console.log(result)
+function getMax(num1, num2) {
+   if (num1 > num2) {
+      return num1
+   }
+   else {
+      return num2
+   }
+}
+// const result =getMax(111,500);
+// console.log(result)
+
+const ajim = 90;
+const sorkar = 65;
+const kalam = 89;
+if (ajim > sorkar && ajim > kalam) {
+   // console.log(' ajim boro')
+} else if (sorkar > kalam && sorkar > ajim) {
+   // console.log('sorkar boro')
+} else {
+   // console.log('kalam boro')
+}
+
+function maxOfThreeNumber(num1, num2, num3) {
+   if (num1 > num2 && num1 > num3) {
+      return 'num1 boro'
+   } else if (num2 > num1 && num2 > num3) {
+      return 'num2 boro'
+   }
+   else {
+      return 'num3 boro'
+   }
+}
+// const result =maxOfThreeNumber(33,222,44);
+// console.log(result)
+
+
+const numbers = [23, 43, 54, 13, 53, 13, 55, 86, 82];
+
+function getMaxOfArrayNumber(numbers) {
+   let max = numbers[0]
+   for (const num of numbers) {
+      if (num > max) {
+         max = num
+      }
+   }
+   return max
+}
+const result = getMaxOfArrayNumber(numbers);
 console.log(result)
