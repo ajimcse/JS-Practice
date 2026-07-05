@@ -226,7 +226,7 @@ function maxOfThreeNumber(num1, num2, num3) {
 // console.log(result)
 
 
-const numbers = [23, 43, 54, 13, 53, 13, 55, 86, 82];
+// const numbers = [23, 43, 54, 13, 53, 13, 55, 86, 82];
 
 function getMaxOfArrayNumber(numbers) {
    let max = numbers[0]
@@ -237,5 +237,36 @@ function getMaxOfArrayNumber(numbers) {
    }
    return max
 }
-const result = getMaxOfArrayNumber(numbers);
-console.log(result)
+// const result = getMaxOfArrayNumber(numbers);
+// console.log(result)
+
+const numbers = [23, 43, 54, 13, 53, 13, 55, 1, 86, 82];
+
+function getMaxOfArrayNumber(numbers) {
+   let min = numbers[0]
+   for (const num of numbers) {
+      if (num < min) {
+         min = num
+      }
+   }
+   return min
+}
+
+// const result = getMaxOfArrayNumber(numbers);
+// console.log(result)
+
+function shopping(shirt,pant, shoe){
+   const shirtPrice= 500;
+   const pantPrice =300;
+   const shoePrice=900;
+
+   const totalShirtPrice= shirtPrice *shirt;
+   const totalPantPrice= pantPrice * pant;
+   const totalShoePrice=shoePrice *shoe;
+
+   const totalCostPrice= totalShirtPrice + totalPantPrice + totalShoePrice;
+   return totalCostPrice;
+}
+
+// const result =shopping(8,1,1);
+// console.log(result)
