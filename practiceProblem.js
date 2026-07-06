@@ -284,10 +284,187 @@ function getCheapestPhone(phones) {
    for (const phone of phones) {
 
       if (phone.price < min.price) {
-         min =phone
+         min = phone
       }
    }
    return min
 }
-const result = getCheapestPhone(phones);
-console.log(result)
+
+
+// const result = getCheapestPhone(phones);
+// console.log(result)
+
+function add(num1, num2) {
+   return num1 + num2;
+}
+function subtract(num1, num2) {
+   return num1 - num2;
+}
+function multiply(num1, num2) {
+   return num1 * num2;
+}
+function divide(num1, num2) {
+   return num1 / num2;
+}
+
+function calculator(a, b, operation) {
+   if (operation === 'add') {
+      const result = add(a, b)
+      return result
+   }
+   else if (operation === 'subtract') {
+      const result = subtract(a, b);
+      return result;
+   }
+   else if (operation === 'multiply') {
+      return multiply(a, b);
+   }
+   else if (operation === 'divide') {
+      return divide(a, b)
+   }
+   else {
+      return "onle 'add', 'subtract', 'multiply', 'divide' operation is allowed"
+   }
+}
+// const result = calculator(4, 9, 'subtract')
+// console.log(result)
+
+
+function one() {
+   return 8;
+}
+
+function two() {
+   return one() + 2;
+}
+
+function three() {
+   return two() * 5;
+}
+
+// console.log(three());
+
+function one() {
+   return 5
+}
+// console.log(one())
+function one() {
+   return 8;
+}
+function two() {
+   return one()
+}
+// console.log(two());
+
+function add() {
+   return 10;
+}
+function total() {
+   return add() + 5;
+}
+// console.log(total())
+
+function one() {
+   return 7
+}
+function two() {
+   const x = one();
+   return x * 2
+}
+// console.log(two())
+
+function one() {
+   return 4;
+}
+function two() {
+   return one() + 6
+}
+function three() {
+   return two() * 2
+}
+// console.log(three())
+
+function add(a, b) {
+   return a + b;
+}
+function multiply(num) {
+   return num * 2;
+
+}
+function result() {
+   const sum = add(5, 7)
+   return multiply(sum)
+}
+// console.log(result())
+
+function one() {
+   return 2;
+}
+function two(a) {
+   return a + one();
+}
+function three() {
+   const x = two(8);
+   return x * 3
+}
+// console.log(three())
+
+function getSum(numbers) {
+   let sum = 0;
+   for (const num of numbers) {
+      sum = sum + num
+   }
+   return sum
+}
+// const result2 = getSum([12, 42, 53]);
+
+// console.log(result2)
+
+function evenSum(numbers) {
+   let even = 0;
+   for (const num of numbers) {
+      if (num % 2 === 0) {
+         even = even + num
+      }
+   }
+   return even
+}
+// const result2 = evenSum([1, 4, 6, 3, 7, 9,22]);
+// console.log(result2)
+
+function getMax(numbers) {
+   let max = numbers[0]
+   for (const num of numbers) {
+      if (num > max) {
+         max = num
+      }
+   }
+   return max;
+}
+// const result2 = getMax([1, 4, 6, 3, 7, 9,22]);
+// console.log(result2)
+
+function countArray(numbers) {
+   let countONe = 0
+   for (const num of numbers) {
+      if (num ===1) {
+         countONe++;
+      }
+   }
+   return countONe
+}
+
+// const result2 = countArray([1, 4, 6, 1, 3, 1, 1, 5, 8, 11,1,]);
+// console.log(result2)
+
+function doubleNUmbers(numbers) {
+   let double=[]
+   for (const num of numbers) {
+     double.push(num *2)
+   }
+   return double
+
+}
+
+// const result2 = doubleNUmbers([1, 4,4,223,43,1]);
+// console.log(result2)
