@@ -468,3 +468,72 @@ function doubleNUmbers(numbers) {
 
 // const result2 = doubleNUmbers([1, 4,4,223,43,1]);
 // console.log(result2)
+
+function getOdd(numbers){
+   let odd=[]
+   for(const num of numbers){
+      if(num % 2 !==0){
+         odd.push(num)
+      }
+   }
+   return odd
+}
+// const result2 = getOdd([1, 4,6,22,43,1,9,5,2,4,7]);
+// console.log(result2)
+
+function getMultipleOfThree(numbers) {
+   let numOfThree=[];
+   for(const num of numbers){
+      if(num % 3===0){
+         numOfThree.push(num)
+      }
+   }
+   return numOfThree
+}
+
+
+// const result2 = getMultipleOfThree([3, 5, 6, 8, 9, 10, 12, 13]);
+// console.log(result2);
+
+function getNegative(numbers) {
+   let negativ=[];
+   for(const num of numbers){
+      if(num < 0){
+         negativ.push(num)
+      }
+   }
+   return negativ;
+}
+
+// const result2 = getNegative([5, -2, 7, -10, 0, -1, 8]);
+// console.log(result2);
+
+function evenDouble(numbers) {
+    let even = [];
+
+    for (const num of numbers) {
+
+        if (num % 2===0) {
+        
+            even.push(num*2);
+
+        }
+    }
+
+    return even;
+}
+// const result2 = evenDouble([3, 5, 6, 8, 9, 10, 12, 13]);
+// console.log(result2)
+
+function getGreaterThanTen(numbers) {
+   let tenOfNumber=[]
+  for(const num of numbers){
+    if(num > 10){
+      tenOfNumber.push(num)
+    }
+  }
+  return tenOfNumber
+}
+
+const result2 = getGreaterThanTen([5, 12, 8, 20, 3, 15,99]);
+console.log(result2);
