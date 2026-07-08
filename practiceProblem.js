@@ -447,7 +447,7 @@ function getMax(numbers) {
 function countArray(numbers) {
    let countONe = 0
    for (const num of numbers) {
-      if (num ===1) {
+      if (num === 1) {
          countONe++;
       }
    }
@@ -458,9 +458,9 @@ function countArray(numbers) {
 // console.log(result2)
 
 function doubleNUmbers(numbers) {
-   let double=[]
+   let double = []
    for (const num of numbers) {
-     double.push(num *2)
+      double.push(num * 2)
    }
    return double
 
@@ -469,10 +469,10 @@ function doubleNUmbers(numbers) {
 // const result2 = doubleNUmbers([1, 4,4,223,43,1]);
 // console.log(result2)
 
-function getOdd(numbers){
-   let odd=[]
-   for(const num of numbers){
-      if(num % 2 !==0){
+function getOdd(numbers) {
+   let odd = []
+   for (const num of numbers) {
+      if (num % 2 !== 0) {
          odd.push(num)
       }
    }
@@ -482,9 +482,9 @@ function getOdd(numbers){
 // console.log(result2)
 
 function getMultipleOfThree(numbers) {
-   let numOfThree=[];
-   for(const num of numbers){
-      if(num % 3===0){
+   let numOfThree = [];
+   for (const num of numbers) {
+      if (num % 3 === 0) {
          numOfThree.push(num)
       }
    }
@@ -496,9 +496,9 @@ function getMultipleOfThree(numbers) {
 // console.log(result2);
 
 function getNegative(numbers) {
-   let negativ=[];
-   for(const num of numbers){
-      if(num < 0){
+   let negativ = [];
+   for (const num of numbers) {
+      if (num < 0) {
          negativ.push(num)
       }
    }
@@ -509,31 +509,44 @@ function getNegative(numbers) {
 // console.log(result2);
 
 function evenDouble(numbers) {
-    let even = [];
+   let even = [];
 
-    for (const num of numbers) {
+   for (const num of numbers) {
 
-        if (num % 2===0) {
-        
-            even.push(num*2);
+      if (num % 2 === 0) {
 
-        }
-    }
+         even.push(num * 2);
 
-    return even;
+      }
+   }
+
+   return even;
 }
 // const result2 = evenDouble([3, 5, 6, 8, 9, 10, 12, 13]);
 // console.log(result2)
 
 function getGreaterThanTen(numbers) {
-   let tenOfNumber=[]
-  for(const num of numbers){
-    if(num > 10){
-      tenOfNumber.push(num)
-    }
-  }
-  return tenOfNumber
+   let tenOfNumber = []
+   for (const num of numbers) {
+      if (num > 10) {
+         tenOfNumber.push(num)
+      }
+   }
+   return tenOfNumber
 }
 
-const result2 = getGreaterThanTen([5, 12, 8, 20, 3, 15,99]);
-console.log(result2);
+
+// const result2 = getGreaterThanTen([5, 12, 8, 20, 3, 15,99]);
+// console.log(result2);
+
+function evenNumberSum(numbers) {
+   let evenSum=0;
+   for(const num of numbers){
+      if(num % 2===0 && num >10){
+         evenSum = evenSum + num
+      }
+   }
+   return evenSum;
+}
+const result2 = evenNumberSum([5, 12, 8, 20, 3, 15,94]);
+console.log(result2)
