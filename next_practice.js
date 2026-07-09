@@ -112,18 +112,68 @@
 // console.log(resul)
 
 
-function countBoolean(array){
-    if(!Array.isArray (array)){
-        return 'invalid Array'
+// function countBoolean(array){
+//     if(!Array.isArray (array)){
+//         return 'invalid Array'
+//     }
+//     let booleanCount=0
+//    for(const arr of array){
+//       if(typeof arr ==='boolean'){
+//         booleanCount++
+//       }
+//    }
+//    return booleanCount
+// }
+// const  array =[12,43,true,443,'ajim', false, 'Pabna',true,false];
+// const resul =countBoolean(array)
+// console.log(resul)
+
+
+// testScore:  ৫০ পয়েন্ট সর্বোচ্চ
+// schoolGrade : ৩০ পয়েন্ট সর্বোচ্চ
+// Parent Profession: যদি "farmer" হয়, ২০ পয়েন্ট
+
+// const jobInfo = {
+//     name: 'ajim',
+//     testScore: 45,
+//     schoolGrade: 25,
+//     isFFamily: true
+// }
+
+// function calculateFinalScore(obj) {
+//     if (typeof obj !== 'object') {
+//         return 'invalid obj'
+//     }
+//     let totalMarks = obj.testScore + obj.schoolGrade;
+//     // console.log(totalMarks)
+//     if (obj.isFFamily === true) {
+//         totalMarks = totalMarks + 20
+
+//     }
+//     if (totalMarks >= 80) {
+//         return true
+
+//     }
+//     return false
+
+// }
+// const resul = calculateFinalScore(jobInfo);
+// console.log(resul)
+
+
+function waitingTime(waitingTimes, serialNumber) {
+    if (!Array.isArray(waitingTimes) || typeof serialNumber !== 'number') {
+        return 'Invalid Input'
     }
-    let booleanCount=0
-   for(const arr of array){
-      if(typeof arr ==='boolean'){
-        booleanCount++
-      }
-   }
-   return booleanCount
+    let sum = 0
+    for (const time of waitingTimes) {
+        sum = sum + time
+    }
+    const avg = sum / waitingTimes.length
+    const israt = serialNumber - 1
+    const isratTime = israt - waitingTimes.length
+    const isratSerilTime = isratTime * avg
+    return isratSerilTime
 }
-const  array =[12,43,true,443,'ajim', false, 'Pabna',true,false];
-const resul =countBoolean(array)
+const resul = waitingTime([13, 2, 6, 7, 10], 6);
 console.log(resul)
