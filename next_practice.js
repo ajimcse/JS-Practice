@@ -169,11 +169,11 @@ function waitingTime(waitingTimes, serialNumber) {
     for (const time of waitingTimes) {
         sum = sum + time
     }
-    const avg = sum / waitingTimes.length
+    const avg = Math.round(sum / waitingTimes.length);
     const israt = serialNumber - 1
     const isratTime = israt - waitingTimes.length
     const isratSerilTime = isratTime * avg
     return isratSerilTime
 }
-const resul = waitingTime([13, 2, 6, 7, 10], 6);
+const resul = waitingTime([ 3, 5, 7, 11, 6 ], 10);
 console.log(resul)
